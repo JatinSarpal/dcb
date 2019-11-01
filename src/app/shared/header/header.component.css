@@ -1,0 +1,32 @@
+.main{
+  
+  position: relative;
+  background-color: transparent !important;
+}
+.nav-link {
+  font-size: 12px;
+}
+.nav-item {
+  margin:2px 3px 2px 35px;
+}
+a{
+  color:black !important;
+}
+a:hover{
+  color:rgb(173, 173, 169);
+  opacity:0.4;
+
+}
+.headerwhite{
+  color: white;
+}
+.active{
+  font-weight: bolder;
+}
+
+.dropdown-item.active {
+    color: #fff;
+    /* text-decoration: none; */
+    /* background-color: #007bff; */
+}
+

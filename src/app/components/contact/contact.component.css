@@ -1,0 +1,26 @@
+.contact-form {
+    margin-top:0% !important;
+}
+.email {
+    margin: 8px 0px 8px 0px;
+}
+.call-setting{
+padding-left:5px;
+}
+input {
+    background: #e6e7e8;
+}
+textarea {
+    background: #e6e7e8;
+}
+input::placeholder {
+    font-size: 11px;
+    color: black;
+}
+textarea::placeholder {
+    font-size: 11px;
+    color: black;
+}
+.form-control-sm {
+    border-radius: 0rem;
+}

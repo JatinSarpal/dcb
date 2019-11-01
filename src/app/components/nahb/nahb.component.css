@@ -1,0 +1,33 @@
+ 
+@media screen and (max-width: 580px) {
+    .carousel { 
+        margin-top: 10px
+    }
+    .row {
+        padding: 0px !important
+    }
+}
+.row {
+    padding: 0px 25px 0px 25px
+}
+/* .aboutus1 {
+  position:absolute;
+}
+.paragraph-aboutus {
+    position: relative;
+} */
+.col-4  {
+    padding: 120px 20px 120px 20px
+}
+.logo{
+    height:50px;
+    width:70px;
+}
+.nahb-text{
+    letter-spacing: 1px;
+}
+.Association {
+    letter-spacing: 1px;
+    color:black !important
+}
+

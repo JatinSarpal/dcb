@@ -1,0 +1,81 @@
+.carousel1 { 
+    height: 365px;
+    width: 285px;
+    margin-left:100px !important;       
+} 
+.carousel2 {
+    width:450px !important;
+    height:365px;
+}
+@media screen and (max-width: 768px) {
+    .carousel { 
+        margin-top: 10px
+    }
+    .carousel1 { 
+        height: 250px !important;
+        width: 250px !important; 
+        margin-left:0px !important;
+        padding-left:20px !important;      
+    }
+    .carousel2 { 
+        height: 250px !important;
+        width: 250px !important;
+        padding-left:20px !important;      
+
+    }
+    .row {
+        padding: 0px !important
+    }
+    .col-sm-5 {
+        padding-right: 18px !important
+     }    
+}
+@media (min-width: 768px) and (max-width:1024px) {
+    .carousel { 
+        margin-top: 10px
+    }
+    .carousel1 { 
+        height: 350px !important;
+        width: 270px !important;
+        margin-left:0px !important;
+    }
+    .carousel2 { 
+        height: 350px;
+        width: 300px       
+    }
+    .row {
+        padding: 0px !important
+    }
+    .col-sm-5 {
+        padding-right: 18px !important
+     }    
+}
+@media (min-width: 1024px) and (max-width: 1220px) {
+    .carousel { 
+        margin-top: 10px
+    }
+    .carousel1 { 
+        height: 350px !important;
+        width: 270px !important;
+        margin-left:0px !important;
+    }
+    .carousel2 { 
+        height: 350px;
+        width: 300px       
+    }
+    .row {
+        padding: 0px !important
+    }
+    .col-sm-5 {
+        padding-right: 18px !important
+     }    
+}
+.row {
+    padding: 0px 25px 0px 25px
+}
+.col-sm-5 {
+    padding-right:90px
+ }
+ .footer {
+    margin-top: 40px !important;
+  }

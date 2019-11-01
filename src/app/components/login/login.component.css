@@ -1,0 +1,29 @@
+.img-bg{
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+    /* .login {
+        position: relative;
+    } */
+    .main-login {
+        margin-top:32% !important;
+    }
+    .email {
+        margin: 8px 0px 8px 0px;
+    }
+    .footer {
+        margin-top:180px !important;
+    }
+    input::placeholder {
+        font-size: 11px;
+        color: black;
+    }
+    input {
+        background: #e6e7e8;
+    }
+    .form-control-sm {
+        border-radius: 0rem;
+    }
