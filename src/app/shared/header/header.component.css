@@ -3,15 +3,18 @@
   position: relative;
   background-color: transparent !important;
 }
+.active {
+  color: black !important;
+  font-weight: bolder;
+}
 .nav-link {
   font-size: 12px;
+  color:black !important
 }
 .nav-item {
-  margin:2px 3px 2px 35px;
+  padding: 0px 35px 0px 34px;
 }
-a{
-  color:black !important;
-}
+
 a:hover{
   color:rgb(173, 173, 169);
   opacity:0.4;
@@ -26,7 +29,217 @@ a:hover{
 
 .dropdown-item.active {
     color: #fff;
-    /* text-decoration: none; */
-    /* background-color: #007bff; */
+    background-color:transparent !important;
+}
+.dropdown-item {
+  font-size:11px !important;
+  
+  
+  padding: 0rem 0rem 0rem 2.3rem;
+ 
+  background-color: transparent;
+  border: none;
+
+}
+.dropdown-menu {
+  
+  min-width: 10rem;
+  padding: .5rem 0 ;
+  margin: -15px 0 0 0;
+  
+ 
+  background-color:white !important;
+ 
+  border: none !important;
+  border-radius: 4px !important;
+  
 }
 
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+   padding:0px;
+   margin:0px;
+  }
+  .dropdown-menu {
+    margin: -7px 0 0 -7px;
+  }
+  .navbar-nav .nav-item {
+    padding: 0px 26px 0px 26px !important;
+  }
+  .dropdown-item {
+    font-size:11px !important;
+    
+    
+    padding: 0rem 0rem 0rem 1.55rem !important;
+   
+    background-color: transparent;
+    border: none;
+  
+  }
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-menu {display: block;
+ background-color: transparent;
+padding:0px !important;
+margin:0px !important}
+
+/* .dropdown:hover . {background-color: #3e8e41;} */
+
+/* .elementToFadeInAndOut {
+  opacity: 1;
+  animation: fade 5s linear;
+}
+
+
+@keyframes fade {
+0%,100% { opacity: 0 }
+50% { opacity: 1 }
+} */
+@media screen and (max-width:1020px) {
+  .navbar {
+    margin-left:0px !important
+  }
+}
+
+.animatedcottagepoint {
+  -webkit-animation-name: cottagePoint;
+  -webkit-animation-duration: 3s; 
+  animation-name: cottagePoint;
+  animation-duration: 13.7s;
+  animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes cottagePoint {
+  0%   {color: white;}
+  5%   {color: white;}
+  10%   {color: white}
+  15%   {color: white;}
+  20%   {color:white;}
+  25%  {color: white;}
+  50%  {color: white;}
+  55%  {color: black;}
+  60%  {color: black;}
+  65%  {color: black;}
+  70%  {color: black;}
+  75% {color: black;}
+  100% {color: black;}
+}
+.cottagepointproject{
+  -webkit-animation-name:cottagepointproject;
+  -webkit-animation-duration: 3s; 
+  animation-name: cottagepointproject;
+  animation-duration: 13.7s;
+  animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes cottagepointproject {
+  0%   {color: yellow;}
+  5%   {color: yellow;}
+  10%   {color: yellow}
+  15%   {color: yellow;}
+  20%   {color:yellow;}
+  25%  {color: yellow;}
+  50%  {color: yellow;}
+  55%  {color: black;}
+  60%  {color: black;}
+  65%  {color: black;}
+  70%  {color: black;}
+  75% {color: black;}
+  100% {color: black;}
+}
+
+.animatedcastlecraq {
+  -webkit-animation-name: castlecraq;
+  -webkit-animation-duration: 3s; 
+  animation-name: castlecraq;
+  animation-duration: 19.7s;
+  animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes castlecraq {
+  0%   {color: white;}
+  5%   {color: white;}
+  10%   {color: white}
+  15%   {color: white;}
+  20%   {color:white;}
+  25%  {color: white;}
+  50%  {color: white;}
+  55%  {color: white;}
+  60%  {color: white;}
+  65%  {color: black;}
+  70%  {color: black;}
+  75% {color: black;}
+  100% {color: black;}
+}
+.castlecraqproject {
+  -webkit-animation-name:castlecraqproject;
+  -webkit-animation-duration: 3s; 
+  animation-name: castlecraqproject;
+  animation-duration: 19.7s;
+  animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes castlecraqproject {
+  0%   {color: yellow;}
+  5%   {color: yellow;}
+  10%   {color: yellow}
+  15%   {color: yellow;}
+  20%   {color:yellow;}
+  25%  {color: yellow;}
+  50%  {color: yellow;}
+  55%  {color: yellow;}
+  60%  {color: yellow;}
+  65%  {color: black;}
+  70%  {color: black;}
+  75% {color: black;}
+  100% {color: black;}
+}
+
+.animatedlanecove {
+  -webkit-animation-name: lanecove;
+  -webkit-animation-duration: 3s; 
+  animation-name: lanecove;
+  animation-duration: 11.7s;
+  animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes lanecove {
+  0%   {color: white;}
+  5%   {color: white;}
+  10%   {color: white}
+  15%   {color: white;}
+  20%   {color:white;}
+  25%  {color: white;}
+  45%  {color:  white;}
+  48%  {color: black;}
+  60%  {color: black;}
+  65%  {color: black;}
+  70%  {color: black;}
+  75% {color: black;}
+  100% {color: black;}
+}
+.lanecoveproject {
+  -webkit-animation-name:lanecoveproject;
+  -webkit-animation-duration: 3s; 
+  animation-name: lanecoveproject;
+  animation-duration: 11.7s;
+  animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes lanecoveproject {
+  0%   {color: yellow;}
+  5%   {color: yellow;}
+  10%   {color: yellow}
+  15%   {color: yellow;}
+  20%   {color:yellow;}
+  25%  {color: yellow;}
+  45%  {color:  yellow;}
+  48%  {color: black;}
+  60%  {color: black;}
+  65%  {color: black;}
+  70%  {color: black;}
+  75% {color: black;}
+  100% {color: black;}
+}

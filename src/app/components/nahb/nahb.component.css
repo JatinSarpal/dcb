@@ -1,21 +1,17 @@
  
 @media screen and (max-width: 580px) {
-    .carousel { 
-        margin-top: 10px
-    }
+    
     .row {
-        padding: 0px !important
+        padding: 5px !important
     }
+}
+a {
+    color:white;
 }
 .row {
     padding: 0px 25px 0px 25px
 }
-/* .aboutus1 {
-  position:absolute;
-}
-.paragraph-aboutus {
-    position: relative;
-} */
+
 .col-4  {
     padding: 120px 20px 120px 20px
 }
@@ -24,10 +20,82 @@
     width:70px;
 }
 .nahb-text{
-    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin:0px;
+    padding: 0px;
+    
 }
 .Association {
-    letter-spacing: 1px;
-    color:black !important
+    word-spacing: 1px;
+    color:black !important;
+    margin:0px;
+    padding: 0px;
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .row {
+        padding-top: 5px !important
+    }
+}
+@media screen and (min-width:580px) and (max-width:768px) {
+    .row {
+        padding-top: 5px !important
+    }
+}
+@media screen and (min-width:300px) and (max-width:492px) {
+    .logo1 {
+                  width:80px;
+                  height:50px;
+    }
+    .logo4 {
+         width:80px
+    }
+    .logo3 {
+        width:40px;
+        height: 40px;;
+}
+    .logo2 {
+        width:40px;
+        height: 40px;
+}
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .row {
+        padding-top: 5px !important
+    }
 }
 
+
+@media screen and (min-width:580px) and (max-width:768px) {
+    .row {
+        padding-top: 5px !important
+    }
+}
+@media screen and (min-width:300px) and (max-width:347px) {
+    .logo1 {
+                  width:70px;
+                  height:40px;
+    }
+    .logo4 {
+         width:70px
+    }
+    .logo3 {
+        width:35px;
+        height: 35px;;
+}
+    .logo2 {
+        width:35px;
+        height: 35px;
+}
+}
+@media screen and (min-width:320px) and (max-width:576px) {
+   .main-logo {
+       width:40% !important;
+       height:20% !important;
+   }
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .img {
+       padding-left:10px;
+    }
+ }
+ 

@@ -21,24 +21,24 @@ import { FactsComponent } from './components/facts/facts.component';
 
 
 const routes: Routes = [
-  {path:'',component:ProjectComponent},
+  {path:'',component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'home',component:HomeComponent},
-  {path:'projects',component:ProjectComponent},
+  {path:'projects/:field',component:ProjectComponent},
 
   {path:'interior',component:InteriorComponent},
 
-  {path:'team',component:TheTeamComponent},
+  // {path:'team',component:TheTeamComponent},
 
   {path:'nahb',component:NahbComponent},
 
   {path:'contact',component:ContactComponent},
 
   {path:'aboutus',component:AboutUsComponent},
-  {path:'aboutus1',component:AboutUs1Component},
+  // {path:'aboutus1',component:AboutUs1Component},
   {path: 'facts' , component:FactsComponent ,children:[
     {path:'beforebuilding', component:BeforebuildingComponent},
-    {path:'cdc', component:CdcComponent},
+    // {path:'cdc', component:CdcComponent},
 
     {path:'timetoconsider', component:TimingToConsiderComponent},
     {path:'expensestoconsider', component:ExpensesToConsiderComponent},

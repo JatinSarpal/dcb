@@ -3,4 +3,16 @@
 } */
 .footer-text{
     letter-spacing: 1px;
+    padding-right: 20px !important;
+}
+@media screen and (max-width:1200px) and (min-width:991px) {
+    .footer-text {
+        padding-right:60px !important;
+    }
+}
+@media screen and (max-width:776px) {
+    .footer-text {
+        padding-right: 0px !important;
+        /* padding-left:60px !important; */
+    }
 }

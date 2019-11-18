@@ -7,6 +7,14 @@
 .call-setting{
 padding-left:5px;
 }
+.logo {
+    width: 10%;
+    height:10%;
+}
+.text {
+
+    padding-left: 12px;
+}
 input {
     background: #e6e7e8;
 }
@@ -24,3 +32,66 @@ textarea::placeholder {
 .form-control-sm {
     border-radius: 0rem;
 }
+
+
+@media screen and (max-width:768px){
+    .logo {
+        width: 10%;
+        height:10%;
+    }
+  
+    .footer {
+        margin-left: 13% !important;
+        /* font-size: 8px !important; */
+
+    }
+    
+}
+@media screen and (max-width:1024px){
+    .logo {
+        width: 20%;
+        height:20%;
+    }
+   
+}
+@media screen and (max-width:1920px){
+    .logo {
+        width: 30%;
+        height:30%;
+    }
+}
+@media screen and (max-width:420px){
+    .footer {
+        /* margin-left: 13% !important; */
+        font-size: 10px !important;
+
+    }
+}
+@media screen and (max-width:1199px) and (min-width:992px){
+.checkbox-input {
+    padding: 0 0 0 40px !important
+}
+.map-image {
+    padding:0 40px 0 0 !important
+}
+}
+@media screen and (min-width:992px){
+    .logo {
+width:25% !important;
+    }
+    .insta-logo {
+width:41%  !important;
+    }
+    }
+    @media screen and (max-width:992px){
+        .checkbox-input {
+            padding:0 !important
+        }
+       .contact-form {
+           padding: 0 !important
+       }
+       .map-image {
+           padding-bottom: 20px !important;
+           padding-right: 0 !important;
+       }
+    }

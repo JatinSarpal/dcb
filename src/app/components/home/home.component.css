@@ -1,81 +1,154 @@
-.carousel1 { 
-    height: 365px;
-    width: 285px;
-    margin-left:100px !important;       
-} 
-.carousel2 {
-    width:450px !important;
-    height:365px;
+.container {
+    height: 370px;
 }
-@media screen and (max-width: 768px) {
-    .carousel { 
-        margin-top: 10px
+ .column1-image {
+     width: 320px !important;
+ }
+ .single-image {
+     padding: 0px 77px 0px 77px;
+ }
+.col-md-5 {
+    padding-left: 90px;
+
+}
+.col-md-7 {
+    padding-right:90px;
+}
+/* .footer {
+    width: 80%;
+    padding-right:100px !important
+} */
+
+@media screen and (min-width: 991px) and (max-width:1200px) {
+    .col-md-5 {
+        padding-left: 50px;
+    
     }
-    .carousel1 { 
-        height: 250px !important;
-        width: 250px !important; 
-        margin-left:0px !important;
-        padding-left:20px !important;      
+    
+    .col-md-7 {
+        padding-right:90px !important;
     }
-    .carousel2 { 
-        height: 250px !important;
-        width: 250px !important;
-        padding-left:20px !important;      
+    .column1-image {
+        width:290px !important ;
+        padding-left:40px !important
+    }
+    .column2-image{
+        padding-left:25px !important
 
     }
-    .row {
-        padding: 0px !important
+    .single-image {
+        padding: 0px 77px 0px 77px !important;
     }
-    .col-sm-5 {
-        padding-right: 18px !important
-     }    
+    .container {
+        height: 340px !important;
+    }
+    /* .footer {
+        padding-right:30px !important
+    } */
 }
-@media (min-width: 768px) and (max-width:1024px) {
-    .carousel { 
-        margin-top: 10px
+
+@media screen and (max-width: 991px) {
+    .col-md-5 {
+        padding-left:0px !important
     }
-    .carousel1 { 
-        height: 350px !important;
-        width: 270px !important;
-        margin-left:0px !important;
+
+    .col-md-7 {
+        padding-right:0px !important
     }
-    .carousel2 { 
-        height: 350px;
-        width: 300px       
+    /* .column1-image {
+        width: 100% !important;
+    } */
+    .column1-image {
+        width:290px !important ;
+        padding-left:40px !important
     }
-    .row {
-        padding: 0px !important
+    .column2-image{
+        padding-left:25px !important;
+        padding-right: 25px !important;
     }
-    .col-sm-5 {
-        padding-right: 18px !important
-     }    
+    .single-image {
+        padding: 0px 25px 0px 25px;
+    }
 }
-@media (min-width: 1024px) and (max-width: 1220px) {
-    .carousel { 
-        margin-top: 10px
+
+@media screen and (max-width:770px) {
+    .col-md-5 {
+        padding:0px !important;
     }
-    .carousel1 { 
-        height: 350px !important;
-        width: 270px !important;
-        margin-left:0px !important;
+    .col-md-7 {
+        padding:10px 0px 0px 0px !important;
     }
-    .carousel2 { 
-        height: 350px;
-        width: 300px       
+      .column1-image {
+        padding-left:25px !important;
+        padding-right: 25px !important;
+        width: 100% !important;
     }
-    .row {
-        padding: 0px !important
+    .footer {
+        margin-top:370px !important
     }
-    .col-sm-5 {
-        padding-right: 18px !important
-     }    
 }
-.row {
-    padding: 0px 25px 0px 25px
-}
-.col-sm-5 {
-    padding-right:90px
- }
- .footer {
-    margin-top: 40px !important;
+
+
+#makethisvanish {
+
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    opacity: 1;
+    z-index:1000;
+    margin: 0 auto;
+    transition: opacity .5s linear;
+  }
+
+  #makethisvanish img {
+    width: 100%;
+    height:100vh;
+  }
+
+  .myimg {
+    height: 100%;
+    width: 100vh;
+  }
+
+  .elementToFadeInAndOut {
+
+    background: grey;
+    -webkit-animation: fadeinout 1.4s linear forwards;
+    animation: fadeinout 1.4s linear forwards;
+ 
+  }
+  
+  @-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0.9}
+  50% { opacity: 1; }
+
+  }
+  
+  @keyframes fadeinout {
+  0%,100% { opacity: 0.8; }
+  50% { opacity: 1; }
+
+  }
+
+
+  img  {
+    animation-name: hello;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+
+  @-webkit-keyframes hello {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+
+  }
+  
+  @keyframes hello {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+
   }

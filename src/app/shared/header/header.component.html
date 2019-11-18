@@ -1,24 +1,38 @@
-<nav class="navbar container navbar-expand-lg navbar-light bg-light main ">
+<nav class="navbar  navbar-expand-lg navbar-light bg-light main w-100">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto ">
         <li class="nav-item">
-            <a class="nav-link headerwhite" routerLink="/home" routerLinkActive="active">HOME</a>
+            <a class="nav-link home" href="/home" routerLinkActive="active">HOME</a>
           </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/aboutus" routerLinkActive="active">ABOUT US <span class="sr-only">(current)</span></a>
+        <a class="nav-link about-link"  href="/aboutus" routerLinkActive="active" >ABOUT US <span class="sr-only">(current)</span></a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link project-link" href="/projects" routerLinkActive="active">PROJECTS</a>
+      </li> -->
+      <li class="nav-item dropdown">
+        <a class="nav-link project-link"  id="projectDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          PROJECTS
+        </a> 
+        <div class="dropdown-menu" aria-label ledby="projectDropdown">
+          <a class="dropdown-item small house1" href="/projects/cottagepoint">Cottage Point</a>
+          <a class="dropdown-item small house2" href="/projects/castlecrag">Castlecrag</a>
+          <a class="dropdown-item small house3" href="/projects/lanecove">Lane Cove</a>
+          <a class="dropdown-item small house4" href="/projects/woollahra">Woollahra</a>
+         
+
+
+        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link projects-link" routerLink="/projects" routerLinkActive="active">PROJECTS & TESTIMONIALS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/interior" routerLinkActive="active">INTERIORS</a>
+        <a class="nav-link intelink" href="/interior" routerLinkActive="active">INTERIORS</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
           FACTS 
         </a> 
         <div class="dropdown-menu" aria-label ledby="navbarDropdown">
@@ -26,7 +40,7 @@
           <a class="dropdown-item small" routerLink="/facts/cdc" routerLinkActive="active" *ngIf="path === '/facts/housekeeping'">DA/CDC</a>
           <!-- <div class="dropdown-divider"></div> -->
           <a class="dropdown-item small" routerLink="/facts/architects" routerLinkActive="active">Architects</a>
-          <a class="dropdown-item small" routerLink="/facts/timetoconsider" routerLinkActive="active">Timing to consider</a>
+          <a class="dropdown-item small"  routerLink="/facts/timetoconsider" routerLinkActive="active">Timing to consider</a>
           <a class="dropdown-item small" routerLink="/facts/expensestoconsider" routerLinkActive="active">Expenses to consider</a>
           <a class="dropdown-item small" routerLink="/facts/housekeeping" routerLinkActive="active">HouseKeeping</a>
           <a class="dropdown-item small" routerLink="/facts/alterations" routerLinkActive="active">Alterations & additions</a>
@@ -35,8 +49,9 @@
 
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/team" routerLinkActive="active" *ngIf="path !== '/nahb'">THE TEAM</a>
+      <li class="nav-item" *ngIf="path === '/facts/beforebuilding' || path === '/facts/architects' || path === '/facts/alterations' ||
+      path === '/facts/timetoconsider' || path === '/facts/expensestoconsider' || path === '/facts/housekeeping' || path === '/interior'">
+        <a class="nav-link" routerLink="/team" routerLinkActive="active">THE TEAM</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" routerLink="/nahb" routerLinkActive="active">NAHB</a>

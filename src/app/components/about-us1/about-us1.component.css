@@ -1,11 +1,53 @@
 .about-text{
   letter-spacing: 1px;
   /* word-spacing: 1px; */
+
+}
+section {
+  height:100% !important;
+  /* width: 100% !important; */
+}
+.img {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+
+}
+.column-1{
+  background-image: url('../../../assets/croped/DCB Home3.png');
+  background-size: cover !important;
+ 
+  background-repeat: no-repeat;
 }
 
+.img2 {
+/* padding-bottom:300px !important;  */
+}
 /* .aboutus1 {
   position:absolute;
 }
 .paragraph-aboutus {
     position: relative;
 } */
+
+
+@media screen and (max-width:992px) {
+
+ 
+}
+@media screen and (max-width:767px) {
+ .row {
+        padding:0 10px 0 10px !important;
+ }
+ .container {
+        padding:0 10px 0 10px !important
+ }
+  
+}
+@media screen and (max-width:540px) {
+ 
+  
+}
+@media screen and (max-width:359px) {
+
+  
+}

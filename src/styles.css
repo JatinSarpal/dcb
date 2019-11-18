@@ -1,352 +1,200 @@
 /* You can add global styles to this file, and also import other style files */
 *{
-    font-family: 'Chivo', sans-serif;
+    /* font-family: 'Chivo', sans-serif; */
+    font-family: '33535gillsansmt' !important;
+    margin:0px;
+    padding: 0px;
 }
-/* .header-text-black {
-    color :black !important;
+@font-face {
+	font-family: '33535gillsansmt';
+	src: url('./assets/css/33535gillsansmt.eot');
+	src: local('33535gillsansmt'), url('./assets/css/33535gillsansmt.woff') format('woff'), url('./assets/css/33535gillsansmt.ttf') format('truetype');
 }
-.header-text-white {
-    color :white !important;
-} */
 
-ul{
-    list-style:none !important;
-  }
-  /* .footer {
-    margin-top: 400px !important;
-  } */
-  /* .nav-link{
-      color:white
-  } */
-  .headerwhite{
-      color: white;
-  }
-  .headerblack{
-      color:black
-  }
-  .cb-slideshow,
-  .cb-slideshow:after { 
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0px;
-      left: 0px;
-      z-index: 0; 
-  }
-  .cb-slideshow:after { 
-      content: '';
-      
-  }
-  .cb-slideshow li span { 
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      color: transparent;
-      background-size: cover;
-      background-position: 50% 50%;
-      background-repeat: none;
-      opacity: 0;
-      z-index: 0;
-      -webkit-backface-visibility: hidden;
-      -webkit-animation: imageAnimation 36s linear infinite 0s;
-      -moz-animation: imageAnimation 36s linear infinite 0s;
-      -o-animation: imageAnimation 36s linear infinite 0s;
-      -ms-animation: imageAnimation 36s linear infinite 0s;
-      animation: imageAnimation 36s linear infinite 0s; 
-  }
-  .cb-slideshow li div { 
-      z-index: 1000;
-      position: absolute;
-      bottom: 30px;
-      left: 0px;
-      width: 100%;
-      text-align: center;
-      opacity: 0;
-      color: #fff;
-      -webkit-animation: titleAnimation 36s linear infinite 0s;
-      -moz-animation: titleAnimation 36s linear infinite 0s;
-      -o-animation: titleAnimation 36s linear infinite 0s;
-      -ms-animation: titleAnimation 36s linear infinite 0s;
-      animation: titleAnimation 36s linear infinite 0s; 
-  }
-  .cb-slideshow li div h3 { 
-      font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-      font-size: 240px;
-      padding: 0;
-      line-height: 200px; 
-  }
-  .cb-slideshow li:nth-child(1) span { 
-      background-image: url(/assets/images/17-DCB-proj-2.jpg) 
-  }
-  .cb-slideshow li:nth-child(2) span { 
-      /* background-image: url(/assets/images/13-DCB-P&T-1.jpg); */
-      -webkit-animation-delay: 6s;
-      -moz-animation-delay: 6s;
-      -o-animation-delay: 6s;
-      -ms-animation-delay: 6s;
-      animation-delay: 6s; 
-  }
-  .cb-slideshow li:nth-child(3) span { 
-      background-image: url(/assets/images/14-DCB-P&T-1.jpg);
-      -webkit-animation-delay: 12s;
-      -moz-animation-delay: 12s;
-      -o-animation-delay: 12s;
-      -ms-animation-delay: 12s;
-      animation-delay: 12s; 
-  }
-  .cb-slideshow li:nth-child(4) span { 
-      background-image: url(/assets/images/16-DCB-proj-2-Seed.jpg);
-      -webkit-animation-delay: 18s;
-      -moz-animation-delay: 18s;
-      -o-animation-delay: 18s;
-      -ms-animation-delay: 18s;
-      animation-delay: 18s; 
-  }
-  .cb-slideshow li:nth-child(5) span { 
-      background-image: url(/assets/images/28-DCB-proj-2.jpg);
-      -webkit-animation-delay: 24s;
-      -moz-animation-delay: 24s;
-      -o-animation-delay: 24s;
-      -ms-animation-delay: 24s;
-      animation-delay: 24s; 
-  }
-  .cb-slideshow li:nth-child(6) span { 
-      background-image: url(/assets/images/18-DCB-proj-2.jpg);
-      -webkit-animation-delay: 30s;
-      -moz-animation-delay: 30s;
-      -o-animation-delay: 30s;
-      -ms-animation-delay: 30s;
-      animation-delay: 30s; 
-  }
-  .cb-slideshow li:nth-child(7) span { 
-    background-image: url(/assets/images/20-DCB-proj-2.jpg);
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s; 
-}
-.cb-slideshow li:nth-child(8) span { 
-    background-image: url(/assets/images/18-DCB-proj-2.jpg);
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s; 
-}
-.cb-slideshow li:nth-child(9) span { 
-    background-image: url(/assets/images/23-DCB-proj-2.jpg);
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s; 
-}
-.cb-slideshow li:nth-child(10) span { 
-    background-image: url(/assets/images/26-DCB-proj-2.jpg);
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s; 
-}
-.cb-slideshow li:nth-child(11) span { 
-    background-image: url(/assets/images/12-DCB-P&T-1.jpg);
-    -webkit-animation-delay: 30s;
-    -moz-animation-delay: 30s;
-    -o-animation-delay: 30s;
-    -ms-animation-delay: 30s;
-    animation-delay: 30s; 
-}
-  .cb-slideshow li:nth-child(2) div { 
-      -webkit-animation-delay: 6s;
-      -moz-animation-delay: 6s;
-      -o-animation-delay: 6s;
-      -ms-animation-delay: 6s;
-      animation-delay: 6s; 
-  }
-  .cb-slideshow li:nth-child(3) div { 
-      -webkit-animation-delay: 12s;
-      -moz-animation-delay: 12s;
-      -o-animation-delay: 12s;
-      -ms-animation-delay: 12s;
-      animation-delay: 12s; 
-  }
-  .cb-slideshow li:nth-child(4) div { 
-      -webkit-animation-delay: 18s;
-      -moz-animation-delay: 18s;
-      -o-animation-delay: 18s;
-      -ms-animation-delay: 18s;
-      animation-delay: 18s; 
-  }
-  .cb-slideshow li:nth-child(5) div { 
-      -webkit-animation-delay: 24s;
-      -moz-animation-delay: 24s;
-      -o-animation-delay: 24s;
-      -ms-animation-delay: 24s;
-      animation-delay: 24s; 
-  }
-  .cb-slideshow li:nth-child(6) div { 
-      -webkit-animation-delay: 30s;
-      -moz-animation-delay: 30s;
-      -o-animation-delay: 30s;
-      -ms-animation-delay: 30s;
-      animation-delay: 30s; 
-  }
-  .cb-slideshow li:nth-child(7) div { 
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s; 
-}
-.cb-slideshow li:nth-child(8) div { 
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s; 
-}
-.cb-slideshow li:nth-child(9) div { 
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s; 
-}
-.cb-slideshow li:nth-child(10) div { 
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s; 
-}
-.cb-slideshow li:nth-child(11) div { 
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s; 
-}
-  /* Animation for the slideshow images */
-  @-webkit-keyframes imageAnimation { 
-      0% { opacity: 0;
-      -webkit-animation-timing-function: ease-in; }
-      8% { opacity: 1;
-           -webkit-animation-timing-function: ease-out; }
-      17% { opacity: 1 }
-      25% { opacity: 0 }
-      100% { opacity: 0 }
-  }
-  @-moz-keyframes imageAnimation { 
-      0% { opacity: 0;
-      -moz-animation-timing-function: ease-in; }
-      8% { opacity: 1;
-           -moz-animation-timing-function: ease-out; }
-      17% { opacity: 1 }
-      25% { opacity: 0 }
-      100% { opacity: 0 }
-  }
-  @-o-keyframes imageAnimation { 
-      0% { opacity: 0;
-      -o-animation-timing-function: ease-in; }
-      8% { opacity: 1;
-           -o-animation-timing-function: ease-out; }
-      17% { opacity: 1 }
-      25% { opacity: 0 }
-      100% { opacity: 0 }
-  }
-  @-ms-keyframes imageAnimation { 
-      0% { opacity: 0;
-      -ms-animation-timing-function: ease-in; }
-      8% { opacity: 1;
-           -ms-animation-timing-function: ease-out; }
-      17% { opacity: 1 }
-      25% { opacity: 0 }
-      100% { opacity: 0 }
-  }
-  @keyframes imageAnimation { 
-      0% { opacity: 0;
-      animation-timing-function: ease-in; }
-      8% { opacity: 1;
-           animation-timing-function: ease-out; }
-      17% { opacity: 1 }
-      25% { opacity: 0 }
-      100% { opacity: 0 }
-  }
-  /* Animation for the title */
-  @-webkit-keyframes titleAnimation { 
-      0% { opacity: 0 }
-      8% { opacity: 1 }
-      17% { opacity: 1 }
-      19% { opacity: 0 }
-      100% { opacity: 0 }
-  }
-  @-moz-keyframes titleAnimation { 
-      0% { opacity: 0 }
-      8% { opacity: 1 }
-      17% { opacity: 1 }
-      19% { opacity: 0 }
-      100% { opacity: 0 }
-  }
-  @-o-keyframes titleAnimation { 
-      0% { opacity: 0 }
-      8% { opacity: 1 }
-      17% { opacity: 1 }
-      19% { opacity: 0 }
-      100% { opacity: 0 }
-  }
-  @-ms-keyframes titleAnimation { 
-      0% { opacity: 0 }
-      8% { opacity: 1 }
-      17% { opacity: 1 }
-      19% { opacity: 0 }
-      100% { opacity: 0 }
-  }
-  @keyframes titleAnimation { 
-      0% { opacity: 0 }
-      8% { opacity: 1 }
-      17% { opacity: 1 }
-      19% { opacity: 0 }
-      100% { opacity: 0 }
-  }
-  /* Show at least something when animations not supported */
-  .no-cssanimations .cb-slideshow li span{
-      opacity: 1;
-  }
-  
-  @media screen and (max-width: 1140px) { 
-      .cb-slideshow li div h3 { font-size: 140px }
-  }
-  @media screen and (max-width: 600px) { 
-      .cb-slideshow li div h3 { font-size: 80px }
-  }
   @media screen and (max-width: 1024px) { 
     .col { 
         margin-right: 100px !important  
      }
 }
-.headerblack{
-    color: black !important;
-  }
-  /* .container { 
-      height:90%
-  } */
-
+@media screen and (max-width: 468px) and (min-width:368px) {
+    .footer {
+        font-size: 13px;
+        padding:0px !important;
+        margin: 0px !important;
+    }
+    }
+    @media screen and (max-width:368px) {
+        .footer {
+            font-size: 11px;
+            padding:0px !important;
+            margin: 0px !important;
+        }
+        }
 
   app-project .navbar-nav .nav-link{
-    color: white !important;
+    /* color: white */
   }
   app-project .footer-text{
     color: white !important;
   }
+  app-login .navbar-nav .nav-link{
+    color: white !important;
+  }
+  app-login .footer-text{
+    color: white !important;
+  }
+  app-interior .navbar-nav .nav-link{
+    color: white !important;
+  }
   app-project .active {
-    
     font-weight: bolder !important;
   }
-  app-project .navbar-nav .projects-link{
-    
+
+  app-project .navbar-nav .project-link{
     color:rgb(243, 243, 16) !important;
 }
+
+ /* app-project .nav-link{
+    -webkit-animation-name: header; 
+    -webkit-animation-duration: 2.5s;
+    animation-name: header;
+    animation-duration: 52s;
+    animation-iteration-count:infinite;
+  }
+  
+  @-webkit-keyframes header {
+    0%   {color: white;}
+    5%   {color: white;}
+    10%   {color: white}
+    15%   {color: black;}
+   
+    18%   {color: black;}
+    23%   {color: black;}
+    26%  {color: white;}
+    30%  {color: white;}
+    35%  {color: white;}
+    40%  {color: white;}
+    45%  {color: white;}
+    52%  {color:black;}
+    53%  {color: black;}
+    60%  {color: black;}
+    65%  {color: white;}
+    70%  {color: white;}
+    73% {color: white;}
+    80% {color: black;}
+    87% {color: black;}
+    90% {color: black;}
+    95% {color: white;}
+    100% {color: white;}
+  } */
+
+  /* app-interior .navbar-nav .nav-link{
+    -webkit-animation-name: interiorheader; 
+    -webkit-animation-duration: 4s; 
+    animation-name: interiorheader;
+    animation-duration: 16s;
+    animation-iteration-count:infinite;
+  }
+  
+  @-webkit-keyframes interiorheader {
+    0%   {color: white;}
+    25%  {color: white;}
+    50%  {color: white;}
+    55%  {color: white;}
+    60%  {color: white;}
+    65%  {color: white;}
+    70%  {color: black;}
+    75% {color: black;}
+    100% {color: black;}
+   
+  } */
+  app-project .footer-text{
+    -webkit-animation-name: footer; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation-name: footer;
+    animation-duration: 104s;
+    animation-iteration-count:infinite;
+  }
+  
+  @-webkit-keyframes footer {
+    0%   {color: white;}
+    5%   {color: white;}
+    10%   {color: black;}
+    15%   {color: white;}
+    20%   {color:white;}
+    25%  {color: white;}
+    30%  {color: black;}
+    35%  {color: white;}
+    40%  {color: white;}
+    45%  {color: white;}
+    50%  {color: white;}
+    55%  {color: white;}
+    60%  {color: white;}
+    65%  {color: white;}
+    70%  {color: white;}
+    75% {color: white;}
+    80% {color: white;}
+
+  }
+  /* app-project .project-link {
+    -webkit-animation-name: projectlink;
+    -webkit-animation-duration: 3s; 
+    animation-name: projectlink ;
+    animation-duration: 52s ;
+    animation-iteration-count:infinite;
+  }
+  
+  @-webkit-keyframes projectlink {
+    0%   {color: yellow;}
+    5%   {color: yellow;}
+    10%   {color: yellow;}
+    15%   {color: black;}
+   
+    18%   {color: black;}
+    23%   {color: black;}
+    26%  {color: yellow;}
+    30%  {color: yellow;}
+    35%  {color: yellow;}
+    40%  {color: yellow;}
+    45%  {color: yellow;}
+    52%  {color:black;}
+    53%  {color: black;}
+    60%  {color: black;}
+    65%  {color: yellow;}
+    70%  {color: yellow;}
+    73% {color: yellow;}
+    80% {color: black;}
+    87% {color: black;}
+    90% {color: black;}
+    95% {color: yellow;}
+    100% {color: yellow;}
+  } */
+
+  app-nahb .navbar-nav .nav-link{
+    padding-left: 10px !important;
+  }
+  
+  app-interior .navbar {
+    margin-left:70px !important
+  }
+
+  app-project .navbar {
+    margin-left:70px !important
+  }
+  app-project .navbar-nav .nav-item {
+    padding: 0px 32px 0px 32px !important;
+      
+    }
+    app-interior .navbar-nav .nav-item {
+      padding: 0px 28px 0px 28px !important;
+        
+      }
+
+  app-facts .navbar-nav .nav-item {
+  padding: 0px 26px 0px 26px;
+    
+  }
+  
+  app-interior .navbar-nav .nav-link {
+    color :black !important
+  }
